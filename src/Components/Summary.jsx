@@ -16,6 +16,9 @@ export const Summary = () => {
   let Balance = totalIncome - totalExpense;
 
   return (
+    <div >
+        <h1 className='mb-2 text-2xl font-bold text-center p-2 bg-orange-500 text-white'>Summary</h1>
+    
     <div className="flex flex-wrap justify-center mb-4">
       <div className="bg-green-100 p-4 rounded-lg shadow-md w-40 mr-9">
         <div className="text-lg font-bold">Income</div>
@@ -29,6 +32,7 @@ export const Summary = () => {
         <div className="text-lg font-bold">Balance</div>
         <span className="text-2xl">{Balance}</span>
       </div>
+    </div>
     </div>
   );
 };
